@@ -110,4 +110,4 @@ function correct(){document.getElementById('tc').className='status ok';document.
 function preset(s){document.getElementById('q').value=s;ask()}
 function ask(){let q=document.getElementById('q').value.toLowerCase(),a=document.getElementById('ans');let t='WARDN could not match that synthetic demo question. Try one of the suggested prompts.';if(q.includes('holding')||q.includes('427'))t='<b>Patient 427:</b> PT was an identified operational dependency and has since resolved. Transportation is confirmed. The final clinical disposition decision remains with the authorized care team.';else if(q.includes('2 pm')||q.includes('2pm')||q.includes('beds'))t='<b>Capacity forecast:</b> +18 beds are projected by 14:00 in this synthetic demonstration. Forecasts are predictions, not guaranteed availability.';else if(q.includes('pt'))t='<b>PT/OT dependencies:</b> 4 patients on this synthetic unit view currently have PT/OT-related operational dependencies.';a.innerHTML=t;a.classList.add('on')}
 </script></body></html>
-<!-- redeploy V2 -->
+
